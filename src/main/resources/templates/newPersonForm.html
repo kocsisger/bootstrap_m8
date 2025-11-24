@@ -8,9 +8,10 @@
     <title>Title</title>
 </head>
 <body>
-<H1>Add new person</H1>
+<H1>[[${pageTitle}]]</H1>
 
 <form th:action="@{/persons/save}" method=post th:object="${newPerson}">
+    <input type="hidden" th:field="*{id}"/>
     <div class="form-group">
         <label for="exampleInputFirstName">First name</label>
         <input type="text" class="form-control" id="exampleInputFirstName" placeholder="Enter first name"
