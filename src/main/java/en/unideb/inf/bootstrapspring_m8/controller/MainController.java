@@ -7,4 +7,9 @@ public class MainController {
     public String showHomepage(){
         return "index";
     }
+
+    @GetMapping("/persons")
+    public String getAllPersons(){
+        return "persons";
+    }
 }
